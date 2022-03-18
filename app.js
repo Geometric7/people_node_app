@@ -26,6 +26,9 @@ for (let counter = 1; counter <= 20; counter ++){
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  const email = `${firstName.toLowerCase()}.${lastName.toLowerCase()}@mail.com`;
+  //const email = firstName.toLowerCase() + "." +lastName.toLowerCase + "@mail.com";
+
   people.push(
     {
       id: counter,
@@ -33,6 +36,7 @@ for (let counter = 1; counter <= 20; counter ++){
       firstName: firstName,
       lastName: lastName,
       age: getAge(),
+      email,
     }
   )
 };
